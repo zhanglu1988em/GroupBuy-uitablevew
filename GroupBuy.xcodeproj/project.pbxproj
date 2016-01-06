@@ -13,6 +13,10 @@
 		A657AE741C3D3EFC00216081 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A657AE721C3D3EFC00216081 /* Main.storyboard */; };
 		A657AE761C3D3EFC00216081 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A657AE751C3D3EFC00216081 /* Assets.xcassets */; };
 		A657AE791C3D3EFC00216081 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A657AE771C3D3EFC00216081 /* LaunchScreen.storyboard */; };
+		A657AE811C3D3F8B00216081 /* tgs.plist in Resources */ = {isa = PBXBuildFile; fileRef = A657AE801C3D3F8B00216081 /* tgs.plist */; };
+		A657AE891C3D402800216081 /* GroupBuyMode.m in Sources */ = {isa = PBXBuildFile; fileRef = A657AE881C3D402800216081 /* GroupBuyMode.m */; };
+		A657AE8B1C3D424D00216081 /* GroupBuyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = A657AE8A1C3D424D00216081 /* GroupBuyCell.xib */; };
+		A657AE911C3D476700216081 /* GroupBuyCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A657AE901C3D476700216081 /* GroupBuyCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +30,12 @@
 		A657AE751C3D3EFC00216081 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A657AE781C3D3EFC00216081 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A657AE7A1C3D3EFC00216081 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A657AE801C3D3F8B00216081 /* tgs.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = tgs.plist; sourceTree = "<group>"; };
+		A657AE871C3D402800216081 /* GroupBuyMode.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBuyMode.h; sourceTree = "<group>"; };
+		A657AE881C3D402800216081 /* GroupBuyMode.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBuyMode.m; sourceTree = "<group>"; };
+		A657AE8A1C3D424D00216081 /* GroupBuyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GroupBuyCell.xib; sourceTree = "<group>"; };
+		A657AE8F1C3D476700216081 /* GroupBuyCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GroupBuyCell.h; sourceTree = "<group>"; };
+		A657AE901C3D476700216081 /* GroupBuyCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GroupBuyCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +68,12 @@
 		A657AE681C3D3EFC00216081 /* GroupBuy */ = {
 			isa = PBXGroup;
 			children = (
-				A657AE6C1C3D3EFC00216081 /* AppDelegate.h */,
-				A657AE6D1C3D3EFC00216081 /* AppDelegate.m */,
-				A657AE6F1C3D3EFC00216081 /* ViewController.h */,
-				A657AE701C3D3EFC00216081 /* ViewController.m */,
+				A657AE821C3D3FB300216081 /* classes */,
 				A657AE721C3D3EFC00216081 /* Main.storyboard */,
 				A657AE751C3D3EFC00216081 /* Assets.xcassets */,
 				A657AE771C3D3EFC00216081 /* LaunchScreen.storyboard */,
 				A657AE7A1C3D3EFC00216081 /* Info.plist */,
+				A657AE801C3D3F8B00216081 /* tgs.plist */,
 				A657AE691C3D3EFC00216081 /* Supporting Files */,
 			);
 			path = GroupBuy;
@@ -77,6 +85,54 @@
 				A657AE6A1C3D3EFC00216081 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		A657AE821C3D3FB300216081 /* classes */ = {
+			isa = PBXGroup;
+			children = (
+				A657AE861C3D3FD400216081 /* controller */,
+				A657AE841C3D3FC500216081 /* view */,
+				A657AE831C3D3FBE00216081 /* other */,
+				A657AE851C3D3FCF00216081 /* mode */,
+			);
+			name = classes;
+			sourceTree = "<group>";
+		};
+		A657AE831C3D3FBE00216081 /* other */ = {
+			isa = PBXGroup;
+			children = (
+				A657AE6C1C3D3EFC00216081 /* AppDelegate.h */,
+				A657AE6D1C3D3EFC00216081 /* AppDelegate.m */,
+			);
+			name = other;
+			sourceTree = "<group>";
+		};
+		A657AE841C3D3FC500216081 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				A657AE8A1C3D424D00216081 /* GroupBuyCell.xib */,
+				A657AE8F1C3D476700216081 /* GroupBuyCell.h */,
+				A657AE901C3D476700216081 /* GroupBuyCell.m */,
+			);
+			name = view;
+			sourceTree = "<group>";
+		};
+		A657AE851C3D3FCF00216081 /* mode */ = {
+			isa = PBXGroup;
+			children = (
+				A657AE871C3D402800216081 /* GroupBuyMode.h */,
+				A657AE881C3D402800216081 /* GroupBuyMode.m */,
+			);
+			name = mode;
+			sourceTree = "<group>";
+		};
+		A657AE861C3D3FD400216081 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				A657AE6F1C3D3EFC00216081 /* ViewController.h */,
+				A657AE701C3D3EFC00216081 /* ViewController.m */,
+			);
+			name = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,7 +192,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A657AE8B1C3D424D00216081 /* GroupBuyCell.xib in Resources */,
 				A657AE791C3D3EFC00216081 /* LaunchScreen.storyboard in Resources */,
+				A657AE811C3D3F8B00216081 /* tgs.plist in Resources */,
 				A657AE761C3D3EFC00216081 /* Assets.xcassets in Resources */,
 				A657AE741C3D3EFC00216081 /* Main.storyboard in Resources */,
 			);
@@ -152,6 +210,8 @@
 				A657AE711C3D3EFC00216081 /* ViewController.m in Sources */,
 				A657AE6E1C3D3EFC00216081 /* AppDelegate.m in Sources */,
 				A657AE6B1C3D3EFC00216081 /* main.m in Sources */,
+				A657AE891C3D402800216081 /* GroupBuyMode.m in Sources */,
+				A657AE911C3D476700216081 /* GroupBuyCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -298,6 +358,7 @@
 				A657AE7F1C3D3EFC00216081 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
